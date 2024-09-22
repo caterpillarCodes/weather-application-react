@@ -12,7 +12,7 @@ export default function WeatherInfo(props) {
         </li>
         <li>{props.data.description}</li>
       </ul>
-      <div className="row">
+      <div className="row d-flex align-items-center">
         <div className="col-6  d-flex align-items-center">
           <img src={iconUrl} alt={props.data.description} />
 
@@ -20,7 +20,6 @@ export default function WeatherInfo(props) {
         </div>
         <div className="col-6">
           <ul>
-            <li>pressure: {props.data.pressure}</li>
             <li>Humidity: {props.data.humidity}%</li>
             <li>Wind:{props.data.wind} km/h</li>
           </ul>
