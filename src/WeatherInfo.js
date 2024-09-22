@@ -2,6 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 
 export default function WeatherInfo(props) {
+  let iconUrl = `"http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${props.data.icon}.png"`;
   return (
     <div className="WeatherInfo">
       <h1>{props.data.city}</h1>
@@ -13,7 +14,7 @@ export default function WeatherInfo(props) {
       </ul>
       <div className="row">
         <div className="col-6">
-          <img src={props.data.icon} alt="partly cloudy" />
+          <img src={iconUrl} alt="partly cloudy" />
 
           <span className="temperature">{props.data.temperature}</span>
           <span className="unit">℃</span>

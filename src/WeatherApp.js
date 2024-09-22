@@ -16,7 +16,7 @@ export default function WeatherApp(props) {
       pressure: response.data.temperature.pressure,
       humidity: response.data.temperature.humidity,
       wind: Math.round(response.data.wind.speed),
-      icon: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+      icon: response.data.condition.icon,
     });
   }
   function search() {
