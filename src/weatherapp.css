@@ -24,16 +24,14 @@
   line-height: 19px;
   list-style: none;
 }
-.WeatherApp img {
-  display: inline-block;
-}
+
 .WeatherApp .temperature {
   font-weight: bold;
   color: rgb(33, 33, 33);
   font-size: 64px;
   line-height: 64px;
   font-weight: 400;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 .WeatherApp .unit {
