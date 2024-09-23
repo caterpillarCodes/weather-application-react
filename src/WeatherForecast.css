@@ -1,16 +1,17 @@
 .WeatherForecast {
   margin-left: 5px;
+  margin-top: 12px;
 }
 .WeatherForecast .col {
   text-align: center;
 }
 .WeatherForecast .forecast-temperature {
-  font-size: 18px;
+  font-size: 16px;
 }
 .WeatherForecast .forecast-Temprature-min {
   opacity: 0.6;
 }
 .WeatherForecast img {
-  width: 86px;
+  width: 76px;
   margin: 0;
 }
