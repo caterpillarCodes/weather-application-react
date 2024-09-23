@@ -56,10 +56,7 @@ export default function WeatherApp(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast
-          iconcode={weatherData.icon}
-          coordinates={weatherData.coords}
-        />
+        <WeatherForecast coordinates={weatherData.coords} />
       </div>
     );
   } else {
