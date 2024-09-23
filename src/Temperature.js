@@ -16,11 +16,11 @@ export default function Temperature(props) {
   }
   if (unit === "celsius") {
     return (
-      <div className="Temperature d-inline">
+      <div className="Temperature d-inline ">
         <span className="temperature">{props.celsius}</span>
         <span className="unit">
           ℃ |{" "}
-          <a href="/" onClick={showFahrenheit}>
+          <a href="/" onClick={showFahrenheit} className="text-decoration-none">
             ℉
           </a>
         </span>
@@ -31,7 +31,7 @@ export default function Temperature(props) {
       <div className="Temperature d-inline">
         <span className="temperature">{fahrenheitTemprature()}</span>
         <span className="unit">
-          <a href="/" onClick={showCelsius}>
+          <a href="/" onClick={showCelsius} className="text-decoration-none">
             ℃{" "}
           </a>
           | ℉
